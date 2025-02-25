@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-top: 50px;  
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    color: #6cb06f;
+    text-align: center;
+    margin-top: 20px;  
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.contact-child.info {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://cdnblog.picsart.com/2022/01/cover-1.jpg?to=max&r=700&type=webp");
+    background-size: cover;
+    color: white;
+    padding: 100px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-child.info p {
+    font-size: 20px;
+    text-shadow: 0px 0px 2px #000;
+    margin-bottom: 15px;
+}
+
+.contact-child.info p span {
+    font-size: 16px;
+    color: #9df2fd;
+}
+
+.contact-child.Uinfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside-Uinfo {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.inside-Uinfo h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inside-Uinfo h3 {
+    font-size: 16px;
+    color: #0085e2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inside-Uinfo input,
+.inside-Uinfo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+}
+
+.inside-Uinfo input:focus,
+.inside-Uinfo textarea:focus {
+    border-color: #399f14;
+    outline: none;
+}
+
+.inside-Uinfo input[type=submit] {
+    background-color: #399f14;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inside-Uinfo input[type=submit]:hover {
+    background-color: #4e7a27;
+}
+
+@media screen and (max-width: 991px) {
+    .contact-parent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-child {
+        width: 100%;
+    }
+
+    .inside-Uinfo {
+        padding: 20px;
+    }
+
+    .inside-Uinfo input,
+    .inside-Uinfo textarea {
+        font-size: 14px;
+    }
+
+    .inside-Uinfo h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .inside-Uinfo input,
+    .inside-Uinfo textarea {
+        font-size: 16px;
+    }
+
+    .inside-Uinfo h2 {
+        font-size: 20px;
+    }
+
+    .inside-Uinfo input[type=submit] {
+        font-size: 14px;
+    }
+}

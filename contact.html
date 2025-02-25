@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="contact.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo">Docuphile</a>
+    <nav class="nav-items">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.php">Account</a>
+    </nav>
+</header>
+<h1>Contact Us</h1>
+<p>We're here to help and answer any questions you might have</p>
+<div class="container">
+    <div class="contact-parent">
+        <div class="contact-child info">
+            <p>
+                Email Docuphile <br>
+                <span>Docuphile@gmail.com</span>
+            </p>
+
+            <p>
+                Call Docuphile<br>
+                <span>+966000000000</span>
+            </p>
+        </div>
+
+        <div class="contact-child Uinfo">
+            <div class="inside-Uinfo">
+                <h3>
+                    <span id="confirm"></span>
+                </h3>
+
+                <form id="contact-form">
+                    <p>Name *</p>
+                    <input id="txt_name" type="text" required="required" aria-label="Your name">
+
+                    <p>Email *</p>
+                    <input id="txt_email" type="email" required="required" aria-label="Your email">
+
+                    <p>Subject *</p>
+                    <input id="txt_subject" type="text" required="required" aria-label="Subject of the message">
+
+                    <p>Message *</p>
+                    <textarea id="txt_message" rows="4" cols="20" required="required" aria-label="Your message"></textarea>
+
+                    <input type="submit" id="btn_send" value="SEND">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#contact-form').submit(function () {
+            var name = $('#txt_name').val(); 
+            alert('Thank you for contacting us, ' + name + '! We will get back to you shortly.');
+
+            $('#txt_name, #txt_email, #txt_subject, #txt_message').val('');
+        });
+    });
+</script>
+
+</body>
+</html>
